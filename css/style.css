@@ -1,0 +1,44 @@
+body {
+    margin: 1% 10%;
+    background-color: var(--cinza);
+}
+
+:root {
+    --azul: #3483fa;
+    --verde: #00a650;
+    --cinza: #e0e0e0;
+    --texto: #333;
+    --branco: #fff;
+}
+
+.barra-navegacao {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.barra-navegacao .navegacao-link,
+.barra-navegacao .navegacao-adicionais {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.barra-navegacao .navegacao-link a,
+.barra-navegacao .navegacao-adicionais a {
+    color: var(--azul);
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.produto {
+    width: 100%;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: var(--branco);
+    display: flex;
+    flex-direction: row;
+}
