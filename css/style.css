@@ -7,7 +7,7 @@ body {
 :root {
     --azul: #3483fa;
     --verde: #00a650;
-    --cinza: #e0e0e0;
+    --cinza: #f6f6f6;
     --cinza-escuro: #7c7c7c;
     --texto: #333;
     --branco: #fff;
@@ -45,7 +45,7 @@ body {
 
     height: auto;
     border-radius: 10px;
-    padding: 10px;
+    padding: 1%;
     background-color: var(--branco);
     display: flex;
     flex-direction: row;
@@ -53,7 +53,7 @@ body {
 
 .produto .produto-img {
     width: 40%;
-    padding: 10px;
+    padding: 1%;
     height: 100%;
 }
 
@@ -91,7 +91,10 @@ body {
 .produto .produto-info .produto-info-motorola a:hover,
 .produto .produto-info .produto-info-vendido a:hover,
 .produto .produto-info a:hover,
-.produto .produto-compra .compra-secao-entrega .link-mapa:hover {
+.produto .produto-compra .compra-secao-entrega .link-mapa:hover,
+.produto .produto-compra .secao-vendedor .info-loja a:hover,
+.produto .produto-compra .lista-vantagens a:hover,
+.produto .produto-compra .adicionar-lista a:hover {
     text-decoration: underline;
 }
 
@@ -249,7 +252,6 @@ body {
     box-shadow: 0 0 0 1px #0070f3;
 }
 
-
 .label-cor:hover,
 .label-memoria:hover {
     border-color: #0070f3;
@@ -277,7 +279,6 @@ body {
     font-size: 0.8em;
 }
 
-
 /*Produto COMPRA*/
 
 .produto .produto-compra {
@@ -288,7 +289,6 @@ body {
     background-color: #fff;
     box-sizing: border-box;
 }
-
 
 .bold {
     font-weight: 600;
@@ -384,7 +384,7 @@ body {
 
 }
 
-/* BOTÕES */
+/* BOTÕES COMPRA*/
 .produto .produto-compra .secao-botoes {
     display: flex;
     flex-direction: column;
@@ -408,41 +408,38 @@ body {
     transition: background-color 0.2s;
 }
 
-.produto .produto-compra .secao-botoes .btn-secundario .icone-carrinho {
-    display: inline-block;
-    background-image: url('assets/back.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+.produto .produto-compra .secao-botoes .btn-secundario img {
+    height: 40%;
+
 }
 
-.btn-principal {
+.produto .produto-compra .secao-botoes .btn-principal {
     background-color: #3483fa;
     color: #fff;
 }
 
-.btn-principal:hover {
+.produto .produto-compra .secao-botoes .btn-principal:hover {
     background-color: #2969c9;
 }
 
-.btn-secundario {
+.produto .produto-compra .secao-botoes .btn-secundario {
     background-color: rgba(65, 137, 230, 0.15);
     color: #3483fa;
 }
 
-.btn-secundario:hover {
+.produto .produto-compra .secao-botoes .btn-secundario:hover {
     background-color: rgba(65, 137, 230, 0.25);
 }
 
 /* Informações do Vendedor */
-.secao-vendedor {
+.produto .produto-compra .secao-vendedor {
     display: flex;
     gap: 12px;
     margin-bottom: 16px;
     align-items: flex-start;
 }
 
-.avatar-loja {
+.produto .produto-compra .secao-vendedor .avatar-loja {
     width: 40px;
     height: 40px;
     border: 1px solid #ededed;
@@ -453,29 +450,29 @@ body {
     overflow: hidden;
 }
 
-.avatar-loja img {
-    width: 80%;
+.produto .produto-compra .secao-vendedor .avatar-loja img {
+    width: 100%;
     object-fit: contain;
 }
 
-.info-loja p {
+.produto .produto-compra .secao-vendedor .info-loja p {
     margin: 0;
     font-size: 14px;
     color: #333;
 }
 
-.info-loja .subtexto {
+.produto .produto-compra .secao-vendedor .info-loja .subtexto {
     font-size: 13px;
     color: #666;
 }
 
-.info-loja a {
+.produto .produto-compra .secao-vendedor .info-loja a {
     color: #3483fa;
     text-decoration: none;
     transition: 0.3s;
 }
 
-.vendas-badge {
+.produto .produto-compra .secao-vendedor .info-loja .vendas-badge {
     font-size: 12px;
     font-weight: 600;
     color: #333;
@@ -483,15 +480,15 @@ body {
     margin-top: 4px;
 }
 
-/* Divisores lineares */
-.divisor {
+/* DIVISÃO */
+.produto .produto-compra .divisor {
     border: 0;
     border-top: 1px solid #ededed;
     margin: 16px 0;
 }
 
-/* Lista de Vantagens Extras */
-.lista-vantagens {
+/* VANTAGENS */
+.produto .produto-compra .lista-vantagens {
     list-style: none;
     padding: 0 0 0 4px;
     /* Pequeno recuo para alinhar os ícones */
@@ -501,39 +498,41 @@ body {
     gap: 16px;
 }
 
-.lista-vantagens li {
+.produto .produto-compra .lista-vantagens li {
     display: flex;
     align-items: flex-start;
     gap: 12px;
 }
 
-.lista-vantagens .icone {
+.produto .produto-compra .lista-vantagens .icone {
     color: #999;
     font-size: 16px;
     margin-top: 2px;
 }
 
-.lista-vantagens p {
+.produto .produto-compra .lista-vantagens p {
     margin: 0;
     font-size: 13px;
     color: #666;
     line-height: 1.4;
 }
 
-.lista-vantagens a {
+.produto .produto-compra .lista-vantagens a {
     color: #3483fa;
     text-decoration: none;
+    transition: 0.3s;
 }
 
-.adicionar-lista {
+.produto .produto-compra .adicionar-lista {
     display: flex;
     align-items: center;
     gap: 12px;
     padding-left: 4px;
 }
 
-.adicionar-lista a {
+.produto .produto-compra .adicionar-lista a {
     color: #3483fa;
-    font-size: 14px;
+    font-size: 0.9em;
     text-decoration: none;
+    transition: 0.3s;
 }

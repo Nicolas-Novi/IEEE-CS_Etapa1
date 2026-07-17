@@ -19,6 +19,7 @@ opcoesCores.forEach(input => {
             corTitulo.textContent = e.target.value
 
             e.target.id == "cor-azul-marinho" ? opcoesMemoria[0].disabled = true : opcoesMemoria[0].disabled = false
+
             e.target.id == "cor-bege" ? opcoesMemoria[2].disabled = true : opcoesMemoria[2].disabled = false
         }
     })

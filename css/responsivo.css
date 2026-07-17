@@ -1,0 +1,104 @@
+/* Tablet e Mobile */
+@media (max-width: 900px) {
+    body {
+        margin: 2% 4%;
+    }
+
+    .barra-navegacao {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .barra-navegacao .navegacao-link,
+    .barra-navegacao .navegacao-adicionais {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .produto {
+        flex-direction: column;
+        padding: 2%;
+        gap: 12px;
+    }
+
+    .produto .produto-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .produto .produto-img img {
+        /* width: 100%; */
+        height: 100%;
+        max-height: 380px;
+    }
+
+    .produto .produto-info {
+        width: 100%;
+        margin: 0;
+    }
+
+    .produto .produto-compra {
+        width: 100%;
+        margin: 0;
+    }
+
+    .produto .produto-compra .secao-botoes {
+        flex-direction: column;
+    }
+}
+
+/* Mobile estreito */
+@media (max-width: 480px) {
+    body {
+        margin: 3% 2%;
+    }
+
+    .produto {
+        padding: 3%;
+    }
+
+    .produto .produto-info h3 {
+        font-size: 1.05em;
+        line-height: 1.25;
+    }
+
+    .produto .produto-info .preco-info {
+        flex-direction: column;
+        gap: 8px;
+        align-items: flex-start;
+        margin: 0;
+    }
+
+    .produto .produto-info .preco-info .preco-novo {
+        width: auto;
+        font-size: 1.35em;
+    }
+
+    .produto .produto-info .preco-info .info-promocao {
+        width: 100%;
+    }
+
+    .container-cores,
+    .container-memorias {
+        flex-wrap: wrap;
+    }
+
+    .label-cor,
+    .label-memoria {
+        margin: 0;
+    }
+
+    .produto .produto-compra {
+        padding: 18px;
+    }
+
+    .produto .produto-compra .secao-vendedor {
+        align-items: center;
+    }
+
+    .produto .produto-compra .secao-estoque .seletor-quantidade {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
