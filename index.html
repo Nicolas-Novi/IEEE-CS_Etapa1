@@ -13,7 +13,7 @@
         <div class="navegacao-link">
             <a href="#">Voltar</a>
             <p> | </p>
-            <a href="#">Celulaares e Telefones</a>
+            <a href="#">Celulares e Telefones</a>
             <p> > </p>
             <a href="#">Celulares e Smartphones</a>
         </div>
@@ -25,25 +25,194 @@
     </nav>
     <main class="produto">
         <section class="produto-img">
-            <img src="assets/cor-azul-marinho.png" alt="Motorola G06 Azul Marinho">
+            <img src="assets/cor-azul-marinho.png" alt="Motorola G06 Azul Marinho" id="imgCelular">
         </section>
         <section class="produto-info">
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam consequatur provident eveniet eligendi
-                deleniti velit amet, recusandae tenetur excepturi repudiandae illo inventore reprehenderit doloremque
-                doloribus dolorum ex. Assumenda, corrupti eligendi.
+            <div class="produto-info-motorola">
+                <img src="assets/moto.png" alt="Motorola" class="motorola-icon">
+                <a href="#" class="motorola-link">Acesse a Loja Oficial da Motorola </a>
+                <img src="assets/check.svg" alt="Verificado" class="motorola-check">
+            </div>
+            <div class="produto-info-header">
+                <div class="header-vendas">
+                    <p>Novo | +50 mil vendidos</p>
+                </div>
+                <div class="header-favorito">
+                    <button type="button" id="btnFavoritar"> <img src="assets/heat-empty.svg" alt="Favoritar"
+                            id="imgFavoritar"></button>
+                </div>
+            </div>
+            <div class="produto-info-vendido">
+                <span class="vendido-alerta">MAIS VENDIDO</span>
+                <a href="#">4 em Celulares e Smartphones</a>
+            </div>
+            <h3>Smartphone Motorola Moto G06 - <span id="tituloMemoria">128</span>gb 12gb (4gb Ram + 8gb Ram Boost) E
+                Camera 50mp com Ai Bateria de 5200
+                Mah Tela 6.9 - <span id="tituloCor">Azul Marinho</span></h3>
+            <p class="produto-info-avaliacoes">
+                4.9
+                <img src="assets/star-full.svg" alt="star-full">
+                <img src="assets/star-full.svg" alt="star-full">
+                <img src="assets/star-full.svg" alt="star-full">
+                <img src="assets/star-full.svg" alt="star-full">
+                <img src="assets/star-full.svg" alt="star-full">
+                (43329)
             </p>
+            <p class="preco-antigo">R$ 1.299</p>
+            <div class="preco-info">
+                <p class="preco-novo">R$ 648</p>
+                <p class="info-promocao">50% OFF no Pix ou <br> Saldo no Mercado Pago</p>
+            </div>
+            <p class="parcelamento-info">ou R$ 720 em <span>10x R$ 72 sem juros</span></p>
+            <a href="#">Ver meios de pagamento e promoções</a>
+
+            <fieldset class="grupo-cores">
+                <legend class="titulo-secao">Cor: <span id="corSelecionada">Azul-marinho</span></legend>
+
+                <div class="container-cores">
+                    <div class="opcao-cor">
+                        <input type="radio" id="cor-azul" name="cor" value="Azul">
+                        <label for="cor-azul" class="label-cor">
+                            <img src="assets/cor-azul.png" alt="Motorola Azul">
+                        </label>
+                    </div>
+
+                    <div class="opcao-cor">
+                        <input type="radio" id="cor-azul-marinho" name="cor" value="Azul-marinho" checked>
+                        <label for="cor-azul-marinho" class="label-cor">
+                            <img src="assets/cor-azul-marinho.png" alt="Motorola Azul-marinho">
+                        </label>
+                    </div>
+
+                    <div class="opcao-cor">
+                        <input type="radio" id="cor-bege" name="cor" value="Bege">
+                        <label for="cor-bege" class="label-cor">
+                            <img src="assets/cor-bege.png" alt="Motorola Bege">
+                        </label>
+                    </div>
+
+                    <div class="opcao-cor">
+                        <input type="radio" id="cor-laranja" name="cor" value="Laranja">
+                        <label for="cor-laranja" class="label-cor">
+                            <img src="assets/cor-laranja.png" alt="Motorola Laranja">
+                        </label>
+                    </div>
+
+                    <div class="opcao-cor">
+                        <input type="radio" id="cor-verde" name="cor" value="Verde">
+                        <label for="cor-verde" class="label-cor">
+                            <img src="assets/cor-verde.png" alt="Motorola Verde">
+                        </label>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="grupo-memorias">
+                <legend class="titulo-secao">Memória interna: <span id="memoriaSelecionada">128GB</span></legend>
+
+                <div class="container-memorias">
+                    <div class="opcao-memoria">
+                        <input type="radio" id="64" name="memoria" value="64GB" disabled>
+                        <label for="64" class="label-memoria">64 GB</label>
+                    </div>
+
+                    <div class="opcao-memoria">
+                        <input type="radio" id="128" name="memoria" value="128GB" checked>
+                        <label for="128" class="label-memoria">128 GB</label>
+                    </div>
+
+                    <div class="opcao-memoria">
+                        <input type="radio" id="256" name="memoria" value="256GB">
+                        <label for="256" class="label-memoria">256 GB</label>
+                    </div>
+                </div>
+            </fieldset>
+            <p class="produto-info-extra">O que você precisa saber sobre este produto</p>
+            <ul>
+                <li class="topico-info">Memória RAM: 4 GB.</li>
+                <li class="topico-info">Dispositivo desbloqueado para que você escolha a companhia telefônica de sua
+                    preferência.</li>
+                <li class="topico-info">Tela IPS de 6.9".</li>
+                <li class="topico-info">Câmera frontal de 8 Mpx.</li>
+                <li class="topico-info">Processador Helio G81 Extreme Octa-Core de 2GHz com 4GB de RAM</li>
+            </ul>
         </section>
-        <section class="produto-comprar">
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, magnam, illo, laudantium eius soluta
-                fugit tempora officia commodi totam libero incidunt? Id, ullam explicabo? Ad cum quam voluptatum
-                assumenda odio?
-            </p>
+        <section class="produto-compra">
+            <!-- Bloco de Entrega / Frete -->
+            <div class="compra-secao-entrega">
+                <span class="badge-frete">FRETE GRÁTIS ACIMA DE R$ 19</span>
+                <h3 class="status-entrega">Chegará grátis amanhã</h3>
+                <p class="detalhe-entrega">
+                    <span class="bold">Retire grátis</span> a partir de sexta-feira em uma agência Mercado
+                    Livre
+                </p>
+                <a href="#" class="link-mapa">Ver no mapa</a>
+            </div>
+
+            <!-- Bloco de Estoque e Quantidade -->
+            <div class="secao-estoque">
+                <h4 class="titulo-estoque">Estoque disponível</h4>
+                <p class="envio-full">
+                    Armazenado e enviado pelo
+                    <span class="tag-full"> <img src="assets/full.svg" alt="FULL"> </span>
+                </p>
+
+                <div class="seletor-quantidade">
+                    <span>Quantidade: <input class="opcao-quantidade" type="number" name="quantidade" min="1" max="99"
+                            id="opcaoQuantidade" placeholder="1"></span>
+                    <span class="quantidade-disponivel">(+50 disponíveis)</span>
+                </div>
+            </div>
+
+            <!-- Botões de Ação -->
+            <div class="secao-botoes">
+                <button class="btn-principal">Comprar agora</button>
+                <button class="btn-secundario">
+                    <i class="icone-carrinho"></i> Adicionar ao carrinho
+                </button>
+            </div>
+
+            <!-- Informações do Vendedor -->
+            <div class="secao-vendedor">
+                <div class="avatar-loja">
+                    <!-- Coloque a logo da Motorola aqui -->
+                    <img src="caminho-logo-motorola.png" alt="Motorola">
+                </div>
+                <div class="info-loja">
+                    <p>Loja oficial <strong class="bold">Motorola</strong></p>
+                    <p class="subtexto">Vendido por <a href="#">Mercado Livre Eletronicos</a></p>
+                    <span class="vendas-badge">+1 M vendas</span>
+                </div>
+            </div>
+
+            <hr class="divisor">
+
+            <!-- Vantagens Extras (Lista) -->
+            <ul class="lista-vantagens">
+                <li>
+                    <span class="icone">↩️</span>
+                    <p><a href="#">Devolução grátis.</a> Você tem 30 dias a partir da data de recebimento.</p>
+                </li>
+                <li>
+                    <span class="icone">🛡️</span>
+                    <p><a href="#">Compra Garantida.</a> Receba o produto que está esperando ou devolvemos o dinheiro.
+                    </p>
+                </li>
+                <li>
+                    <p>12 meses de garantia de fábrica.</p>
+                </li>
+            </ul>
+
+            <hr class="divisor">
+
+            <!-- Adicionar a Lista -->
+            <div class="adicionar-lista">
+                <span class="icone">➕</span>
+                <a href="#">Adicionar a uma lista</a>
+            </div>
         </section>
 
     </main>
-
+    <script src="javascript/script.js"></script>
 </body>
 
 </html>
